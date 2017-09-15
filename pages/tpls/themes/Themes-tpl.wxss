@@ -1,0 +1,50 @@
+.themes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30rpx;
+  padding-bottom: 40rpx;
+  background-color: white;
+}
+
+.themes-title {
+  margin-top: 40rpx;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.themes-describe {
+  margin-top: 10rpx;
+  font-size: 11px;
+  color: #999;
+  text-align: center;
+}
+
+.themes-container {
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  width: 180rpx;
+  text-align: center;
+  white-space: normal;
+}
+
+.themes-imgs {
+  white-space: nowrap;
+}
+
+.themes-img {
+  width: 180rpx;
+  height: 250rpx;
+  /*border-radius: 10rpx;*/
+}
+
+.themes-name {
+  margin: 20rpx auto 0;
+  text-align: midle;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333;
+}

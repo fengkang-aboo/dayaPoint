@@ -1,0 +1,25 @@
+.menus {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 80rpx;
+  margin: 40rpx auto 40rpx auto;
+}
+
+.menu image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 16rpx;
+}
+
+.menu text {
+  font-size: 28rpx;
+  color: #333;
+  text-align: center;
+}

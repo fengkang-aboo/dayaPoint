@@ -1,0 +1,51 @@
+<template name="ThemeProducts">
+  <block wx:for="{{products}}">
+    <view class="shops" data-id="{{item.id}}" catchtap="onProductsItemTap">
+      <image class="shops_img" src="{{item.main_img_url}}" mode="aspectFill"></image>
+      <view class="shops_data">
+        <text class="shops_title">{{item.name}}</text>
+        <text class="shops_price">{{item.price}}元/单</text>
+        <view class="shops_describe">
+          <text>库存</text>
+          <text>{{item.stock}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</template>
+<!--<view class="shops" catchtap="onDetailsTap">
+    <image class="shops_img" src="/images/services/shop1.jpg"></image>
+    <view class="shops_data">
+      <text class="shops_title">空间之间的抽象艺术之作某年某月某日</text>
+      <text class="shops_price">126元</text>
+      <view class="shops_describe">
+        <text>双井</text>
+        <text>艺术</text>
+        <text>油画</text>
+      </view>
+    </view>
+  </view>
+  <view class="shops">
+    <image class="shops_img" src="/images/services/shop2.jpg"></image>
+    <view class="shops_data">
+      <text class="shops_title">感受古典与现在绘画的魅力结合 绘画课程</text>
+      <text class="shops_price">150元/人</text>
+      <view class="shops_describe">
+        <text>望京</text>
+        <text>水彩</text>
+        <text>绘画</text>
+      </view>
+    </view>
+  </view>
+  <view class="shops">
+    <image class="shops_img" src="/images/services/shop3.jpg"></image>
+    <view class="shops_data">
+      <text class="shops_title">体验一把孩子的绘画世界 给自己一个绘画的下午</text>
+      <text class="shops_price">278元/2人</text>
+      <view class="shops_describe">
+        <text>双井</text>
+        <text>手工课</text>
+        <text>绘画</text>
+      </view>
+    </view>
+  </view>-->

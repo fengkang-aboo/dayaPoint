@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/services/services",
+    "pages/product/product",
+    "pages/cart/cart",
+    "pages/my/my",
+    "pages/order/order",
+    "pages/pay-result/pay-result",
+    "pages/my-order/my-order"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffda44",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "images/icon/btn_nor_home.png",
+        "selectedIconPath": "images/icon/btn_sel_home.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/icon/btn_nor_mine.png",
+        "selectedIconPath": "images/icon/btn_sel_mine.png"
+      }
+    ],
+    "selectedColor": "#333",
+    "color": "989898"
+  }
+}

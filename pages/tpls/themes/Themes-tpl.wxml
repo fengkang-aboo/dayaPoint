@@ -1,0 +1,14 @@
+<template name="themes">
+  <view class="themes">
+    <text class="themes-title">活动预告</text>
+    <text class="themes-describe">最新活动资讯抢先看</text>
+    <scroll-view class="themes-imgs" scroll-x="true" style="width:100%">
+      <block wx:for="{{products}}" wx:for-item="item">
+        <view class="themes-container" data-id="{{item.id}}" catchtap="onProductsItemTap">
+          <image class="themes-img" src="{{item.main_img_url}}" mode="aspectFill"></image>
+          <text class="themes-name">{{item.name}}</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</template>

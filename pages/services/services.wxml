@@ -1,0 +1,21 @@
+<import src="../tpls/products/ThemeProducts/ThemeProducts-tpl.wxml" />
+<view class="services_container">
+  <image class="services_banner" src="{{themeInfo.head_img.url}}" mode="aspectFill"></image>
+  <view class="menus">
+    <view class="menus_titile">
+      <text>默认</text>
+      <image src="/images/services/btn_nor_jiantou.png"></image>
+    </view>
+    <view class="menus_titile">
+      <text>销量</text>
+      <image src="/images/services/btn_nor_jiantou.png"></image>
+    </view>
+    <view class="menus_titile">
+      <text>价格</text>
+      <image src="/images/services/btn_nor_jiantou.png"></image>
+    </view>
+  </view>
+  <view hidden="{{categoryProducts.error_code==30000}}">
+    <template is="ThemeProducts" data="{{products:categoryProducts}}"></template>
+  </view>
+</view>

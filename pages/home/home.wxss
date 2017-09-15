@@ -1,0 +1,21 @@
+@import "../tpls/menus/menus-tpl.wxss";
+@import "../tpls/products/HomeProducts/HomeProducts-tpl.wxss";
+@import "../tpls/themes/Themes-tpl.wxss";
+
+
+.container {
+  border-top: solid 1px #e6e6e6;
+  background-color: #f2f2f2;
+}
+
+swiper {
+  width: 100%;
+  height: 376rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+

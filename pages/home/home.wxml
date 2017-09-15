@@ -1,0 +1,24 @@
+<import src="../tpls/menus/menus-tpl.wxml"/>
+<import src="../tpls/products/HomeProducts/HomeProducts-tpl.wxml"/>
+<import src="../tpls/themes/Themes-tpl.wxml"/>
+
+<view class="container" hidden="{{!loadingHidden}}">
+
+  <swiper indicator-dots="true" indicator-color="#ffffff" autoplay="true" circular="{{false}}">
+    <block wx:for="{{bannerArr}}">
+      <swiper-item class="banner-item" bindtap="onProductsItemTap" data-id="{{item.key_word}}">
+        <image class="item-image" src="{{item.img.url}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <template is="menus"></template>
+
+  <template is="themes" data="{{products:productsArr}}"></template>
+  
+  <template is="HomeProducts" data="{{products:productsArr}}"></template>
+
+</view>
+<loading hidden="{{loadingHidden}}">
+  加载中...
+</loading>

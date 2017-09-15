@@ -1,0 +1,32 @@
+<template name="HomeProducts">
+  <view class="services">
+    <text class="services-title">活动预告</text>
+    <text class="services-describe">最新活动资讯抢先看</text>
+    <block wx:for="{{products}}">
+      <view class="service" data-id="{{item.id}}" catchtap="onProductsItemTap">
+        <view class="service-container">
+          <text class="service-title">{{item.name}}</text>
+          <text class="service-describe">{{item.describe}}</text>
+          <text class="service-price">{{item.price}}元/单</text>
+        </view>
+        <image class="service-cover" src="/images/icon/zhezhao.png"></image>
+        <image src="{{item.main_img_url}}" mode="aspectFill"></image>
+      </view>
+    </block>
+  </view>
+  <!--<view class="services">
+    <text class="services-title">音乐学堂</text>
+    <text class="services-describe">让音乐和你一起摇摆起来</text>
+    <block wx:for="{{products}}">
+      <view class="service" data-id="{{item.id}}" catchtap="onProductsItemTap">
+        <view class="service-container">
+          <text class="service-title">{{item.name}}</text>
+          <text class="service-describe">{{item.describe}}</text>
+          <text class="service-price">{{item.price}}元/次</text>
+        </view>
+        <image class="service-cover" src="/images/home/zhezhao.png"></image>
+        <image src="{{item.main_img_url}}" mode="aspectFill"></image>
+      </view>
+    </block>
+  </view>-->
+</template>

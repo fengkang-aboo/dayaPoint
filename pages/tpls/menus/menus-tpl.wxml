@@ -1,0 +1,20 @@
+<template name="menus">
+  <view class="menus">
+    <view class="menu" data-id="1" data-name="音乐" bindtap="onServicesItemTap">
+      <image src="/images/icon/ico_music.png"></image>
+      <text>音乐</text>
+    </view>
+    <view class="menu" data-id="2" data-name="戏剧" bindtap="onServicesItemTap">
+      <image src="/images/icon/ico_drama.png"></image>
+      <text>戏剧</text>
+    </view>
+    <view class="menu" data-id="3" data-name="舞蹈" bindtap="onServicesItemTap">
+      <image src="/images/icon/ico_dance.png"></image>
+      <text>舞蹈</text>
+    </view>
+    <view class="menu" data-id="4" data-name="课程" bindtap="onServicesItemTap">
+      <image src="/images/icon/ico_class.png"></image>
+      <text>课程</text>
+    </view>
+  </view>
+</template>

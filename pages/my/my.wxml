@@ -1,0 +1,51 @@
+<view class="container my-container" hidden="{{!loadingHidden}}">
+  <view class="my-header">
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <text class="name">{{userInfo.nickName}}</text>
+  </view>
+  <!--地址管理-->
+  <view class="my-address">
+    <block wx:if="{{addressInfo}}">
+      <view class="item-title" ontap="editAddress">
+        地址管理
+        <image src="../../images/icon/arrow@right.png"></image>
+      </view>
+      <view class="item-title" bindtap="onMyOrderTap">
+        我的订单
+        <image src="../../images/icon/arrow@right.png"></image>
+      </view>
+      <!--<view class="item-main">
+        <view class="section">
+          <input disabled name="name" placeholder="姓名" value="{{addressInfo.name}}" />
+        </view>
+        <view class="section">
+          <input disabled type="number" name="mobile" placeholder="手机号码" value="{{addressInfo.mobile}}" />
+        </view>
+        <view class="section">
+          <input disabled name="detail" placeholder="收货地址" value="{{addressInfo.totalDetail}}" />
+        </view>
+      </view>-->
+    </block>
+    <block wx:else>
+      <view class="add-new-address" ontap="editAddress">
+        <text class="icon">+</text>
+        <text>添加地址</text>
+      </view>
+    </block>
+  </view>
+
+  <view class="my-order">
+    <view class="item-title" bindtap="onMakePhoneCall">
+      客服电话
+      <span style="color: #999999;margin-left:350rpx;">010-53511030</span>
+      <image src="../../images/icon/arrow@right.png"></image>
+    </view>
+    <view class="item-title" bindtap="onShowModal">
+      关于我们
+      <image src="../../images/icon/arrow@right.png"></image>
+    </view>
+  </view>
+</view>
+<loading hidden="{{loadingHidden}}">
+  加载中...
+</loading>
